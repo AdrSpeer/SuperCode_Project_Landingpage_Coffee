@@ -1,0 +1,293 @@
+/* / Basics */
+
+@font-face {
+  font-family: clicker;
+  src: url(./assets/fonts/ClickerScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: play;
+  src: url(./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --coffee: #603809;
+  --button: #f9c06a;
+  --text: #707070;
+}
+
+.btn {
+  background-color: var(--button);
+  padding: 0.5em 2rem;
+  width: 15rem;
+  text-align: center;
+  color: #1e1e1e;
+  font-family: play;
+  font-weight: 600;
+  border-radius: 2.5rem;
+  font-size: 2rem;
+}
+
+/* ! Header */
+
+header {
+  height: 100vh;
+  background: url(./assets/img/bgr_header.jpeg) no-repeat left;
+  background-size: cover;
+  padding: 1.6vw 3vw 0 6vw;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h3 {
+  font-family: clicker;
+  font-size: 4rem;
+  color: white;
+  font-weight: 400;
+}
+
+.header-left {
+  display: flex;
+  justify-content: space-between;
+  gap: 3vw;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3vw;
+  padding-right: 3vw;
+}
+
+.header-right a:nth-last-of-type(1) {
+  background-color: var(--button);
+  padding: 1.5rem 2.5rem;
+  border-radius: 2rem;
+  color: #1e1e1e;
+}
+
+.header-right a:nth-last-of-type(2) {
+  text-decoration: underline;
+}
+
+nav div a {
+  color: white;
+  font-size: 1.5rem;
+  font-family: play;
+}
+
+header article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3vh;
+  height: 90vh;
+}
+
+article h4 {
+  font-size: 2.2rem;
+  font-family: play;
+  font-weight: 400;
+  color: white;
+}
+
+h1 {
+  font-size: 22rem;
+  font-family: clicker;
+  font-weight: 500;
+  color: white;
+}
+
+header article p {
+  font-size: 2rem;
+  width: 35vw;
+  line-height: 3.5vh;
+  color: white;
+}
+
+/* ! Main */
+
+main {
+  font-family: play;
+}
+
+.firstsection {
+  height: 60vh;
+  display: flex;
+  padding-top: 5vh;
+  padding-left: 6vw;
+}
+
+.firstsection div {
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+  padding-top: 6vh;
+  gap: 3.5vh;
+}
+
+.firstsection div h2 {
+  font-size: 5.5rem;
+  color: var(--coffee);
+}
+
+.firstsection div p {
+  font-size: 2rem;
+  color: var(--text);
+  line-height: 3.2rem;
+  width: 40vw;
+}
+
+.firstsection img {
+  width: 50vw;
+  height: 50vh;
+}
+
+.blast {
+  display: flex;
+  justify-content: flex-start;
+  height: 25vh;
+  width: 25vw;
+}
+
+.secondsection {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 6vw;
+  margin-bottom: 30rem;
+}
+
+.secondsection h2 {
+  font-size: 5.5rem;
+  color: var(--coffee);
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.firstp {
+  font-size: 2rem;
+  color: var(--text);
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.box img {
+  width: 8.5rem;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  padding-left: 2vw;
+  padding-right: 9vw;
+}
+
+.box {
+  border: solid 1px black;
+  height: 28rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1vw;
+  border: 1px solid rgba(249, 192, 106, 0.42);
+  background: #fff9f1;
+  margin-bottom: 3rem;
+}
+
+.boxone {
+  background: #ffeed8;
+  border: none;
+}
+
+.box h5 {
+  color: var(--coffee);
+  font-size: 2.8rem;
+  padding-bottom: 1rem;
+}
+
+.box p {
+  color: var(--text);
+  font-size: 2rem;
+  text-align: center;
+  width: 75%;
+}
+
+.box img {
+  width: 8.5rem;
+  padding-bottom: 1.6rem;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom h3 {
+  color: var(--coffee);
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.thirdsection {
+  background: url(./assets/img/bgr.jpeg) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  padding-top: 8rem;
+  background-color: var(--coffee);
+  background-blend-mode: soft-light;
+  opacity: 0.9;
+}
+
+.thirdsection article {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 6vw;
+  gap: 6vw;
+}
+
+.thirdsection article h2 {
+  color: white;
+  font-size: 5.4rem;
+  width: 80rem;
+  padding-bottom: 4rem;
+}
+
+.thirdsection article p {
+  color: white;
+  font-size: 2rem;
+  width: 40rem;
+  line-height: 3.2rem;
+  padding-bottom: 4rem;
+}
+
+.thirdsection article img {
+  height: 47rem;
+  width: 30rem;
+}
